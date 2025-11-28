@@ -3,89 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Rodrigues| Portfólio</title>
-    </head>
+    <title>Portfólio | Gustavo Rodrigues</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
-    <header>
-        <nav>
-            <h1>Gustavo Rodrigues Neves</h1>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">&lt;Gustavo /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projetos">Meus Feitos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="theme-btn-container">
+                <button class="theme-switch" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-    <section id="inicio">
-        <div class="hero">
-            <h2>Olá, eu sou Gustavo</h2>
-            <p>Seja bem-vindo(a) ao meu portfólio digital. Desenvolvedor(a) focado(a) em [Tecnologia principal], com paixão por criar soluções inovadoras.</p>
-            <a href="#projetos" class="btn">Ver Projetos</a>
+    <section id="sobre" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">Desenvolvedor & Gamer</span>
+                <h1>Olá, sou <br><span class="highlight">Gustavo Rodrigues</span></h1>
+                <p class="bio">
+                    Oi, me chamo Gustavo, sou um jovem programador de 19 anos. Atualmente sei desenvolver páginas web e jogos simples graças aos meus estudos no <strong>IFRJ - Campus Niterói</strong>.
+                </p>
+                <div class="tech-stack">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <a href="#contato" class="cta-button">Vamos conversar?</a>
+            </div>
+            <div class="hero-visual">
+                <div class="blob"></div>
+                <img src="https://placehold.co/400x400/8A2BE2/white?text=GR" alt="Avatar Gustavo" class="avatar">
+            </div>
         </div>
     </section>
 
-    <hr>
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Meus Feitos</h2>
+            <div class="grid-projects">
+                
+                <a href="LINK_DO_PROJETO_1" target="_blank" class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400/EEE/8A2BE2?text=Projeto+Web" alt="Projeto 1">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nome do Site 1</h3>
+                        <p>Desenvolvimento Web</p>
+                        <span class="link-arrow"><i class="fas fa-external-link-alt"></i> Visitar</span>
+                    </div>
+                </a>
 
-    <section id="sobre">
-        <h2>👋 Sobre Mim</h2>
-        <p>Sou Gustavo um(a) sou um estudante de TI com 3 anos de experiência.</p>
-        
-        <div class="habilidades">
-            <h3>Minhas Habilidades:</h3>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>[Framework/Linguagem 1]</li>
-                <li>[Ferramenta/Habilidade 2]</li>
-            </ul>
+                <a href="LINK_DO_PROJETO_2" target="_blank" class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400/EEE/8A2BE2?text=Jogo+Simples" alt="Projeto 2">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nome do Jogo</h3>
+                        <p>Game Dev</p>
+                        <span class="link-arrow"><i class="fas fa-external-link-alt"></i> Jogar</span>
+                    </div>
+                </a>
+
+                <a href="LINK_DO_PROJETO_3" target="_blank" class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400/EEE/8A2BE2?text=Outro+Site" alt="Projeto 3">
+                    </div>
+                    <div class="card-content">
+                        <h3>Outro Projeto</h3>
+                        <p>Front-end</p>
+                        <span class="link-arrow"><i class="fas fa-external-link-alt"></i> Visitar</span>
+                    </div>
+                </a>
+
+            </div>
         </div>
     </section>
 
-    <hr>
+    <section id="contato" class="contact-section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2>Vamos criar algo incrível?</h2>
+                <p>Estou disponível para novos projetos e colaborações.</p>
+                <div class="email-box">
+                    <i class="fas fa-envelope"></i>
+                    <span>gunevesgustavo@gmail.com</span>
+                </div>
+            </div>
 
-    <section id="projetos">
-        <h2>✨ Projetos em Destaque</h2>
-        
-        <div class="projeto">
-            <h3>checkpoint3.1</h3>
-            <p>uma copia do spotify de uma maneira mais engraçada</p>
-         <a href="https://github.com/Samambaia59/checkpoint3.1" target="_blank">Código</a>
+            <form action="https://formspree.io/f/SEU_CODIGO_NOVO_AQUI" method="POST" class="form-box">
+                <div class="input-group">
+                    <label>Seu Nome</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label>Seu Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Mensagem</label>
+                    <textarea name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
-        
-        </section>
-
-    <hr>
-
-    <section id="contato">
-        <h2>✉️ Entre em Contato</h2>
-        <p>Gostaria de discutir uma oportunidade? Envie-me uma mensagem!</p>
-        
-        <form action="gunevesgustavo@gmail.com" method="POST">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            </div>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-
-        <p>Ou me encontre nas redes:</p>
-        <a href="@manogutooo" target="_blank">Instagran</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Gustavo Rodrigues Neves.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
